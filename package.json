@@ -5,9 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "chrome": "./node_modules/.bin/nightwatch --config ./nightwatch.conf.js --env chrome",
+    "chromeHeadless": "./node_modules/.bin/nightwatch --config ./nightwatch.conf.js --env chromeHeadless"
   },
   "dependencies": {
+    "babel-register": "^6.26.0",
+    "chromedriver": "^2.38.2",
+    "cross-spawn": "^6.0.5",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.11.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
